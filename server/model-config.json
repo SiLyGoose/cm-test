@@ -43,5 +43,25 @@
   "Reviewer": {
     "dataSource": "mongoDs",
     "public": true
+  },
+  "Account": {
+    "dataSource": "mongoDs",
+    "public": true
+  },
+  "Course": {
+    "dataSource": "mongoDs",
+    "public": true
+  },
+  "Classroom": {
+    "dataSource": "mongoDs",
+    "public": true
+  },
+  "Organization": {
+    "dataSource": "mongoDs",
+    "public": true
+  },
+  "AccountCourse": {
+    "dataSource": "mongoDs",
+    "public": false
   }
 }

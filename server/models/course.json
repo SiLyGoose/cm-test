@@ -1,0 +1,41 @@
+{
+  "name": "Course",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "status": {
+      "type": "string",
+      "required": true
+    },
+    "date": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "accounts": {
+      "type": "hasMany",
+      "model": "Account",
+      "foreignKey": "courseId",
+      "through": "AccountCourse",
+      "keyThrough": "accountId"
+    },
+    "classroom": {
+      "type": "belongsTo",
+      "model": "Classroom"
+    },
+    "organization": {
+      "type": "belongsTo",
+      "model": "Organization"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

@@ -20,6 +20,7 @@ module.exports = function(app) {
       console.log('> models created sucessfully');
     });
   });
+
   //create reviewers
   function createReviewers(cb) {
     mongoDs.automigrate('Reviewer', function(err) {
@@ -37,6 +38,7 @@ module.exports = function(app) {
       }], cb);
     });
   }
+
   //create coffee shops
   function createCoffeeShops(cb) {
     mysqlDs.automigrate('CoffeeShop', function(err) {
@@ -54,6 +56,7 @@ module.exports = function(app) {
       }], cb);
     });
   }
+
   //create reviews
   function createReviews(reviewers, coffeeShops, cb) {
     mongoDs.automigrate('Review', function(err) {

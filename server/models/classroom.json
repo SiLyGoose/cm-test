@@ -1,0 +1,28 @@
+{
+  "name": "Classroom",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "courses": {
+      "type": "hasMany",
+      "model": "Course",
+      "foreignKey": "classroomId"
+    },
+    "organization": {
+      "type": "belongsTo",
+      "model": "Organization"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
