@@ -23,13 +23,6 @@ app.start = function() {
   });
 };
 
-app.use(function(req, res, next) {
-  console.log('Client IP Address:',
-    req.headers['x-forwarded-for'] || req.connection.remoteAddress);
-
-  next();
-});
-
 // Bootstrap the application, configure models, datasources and middleware.
 // Sub-apps like REST API are mounted via boot scripts.
 boot(app, __dirname, function(err) {
