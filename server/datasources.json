@@ -3,15 +3,6 @@
     "name": "db",
     "connector": "memory"
   },
-  "mysqlDs": {
-    "host": "localhost",
-    "port": 3306,
-    "database": "cm",
-    "username": "root",
-    "password": "09slZenpai-7103",
-    "name": "mysqlDs",
-    "connector": "mysql"
-  },
   "mongoDs": {
     "url": "mongodb+srv://testuser:testpassword@cm.audtfyb.mongodb.net/CM?retryWrites=true&w=majority&appName=CM",
     "name": "mongoDs",
